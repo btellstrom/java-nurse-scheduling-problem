@@ -17,6 +17,13 @@ public class ScheduleController implements ScheduleApi {
 
 	@Override
 	public ResponseEntity<ScheduleResponse> schedulePost(@Valid @RequestBody ScheduleRequest body) {
+		String[] args = new String[0];
+		try {
+			MyProgram.main(args);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		ScheduleResponse info = new ScheduleResponse();
 		info.setSuboptimal(true);
 		info.setMatching(new Matching());
