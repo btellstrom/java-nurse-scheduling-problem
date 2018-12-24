@@ -11,6 +11,7 @@ public class RabbitsPheasants {
   private static Logger logger = Logger.getLogger(RabbitsPheasants.class.getName());
 
   static {
+	  System.out.print(System.getProperty("java.library.path"));
     System.loadLibrary("jniortools");
   }
 
