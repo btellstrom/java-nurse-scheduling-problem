@@ -2,7 +2,7 @@ language: java
 jdk:
 - oraclejdk8
 script:
-- sudo curl -o /usr/lib64/libortools.so https://github.com/oliviercailloux/google-or-tools-java/raw/master/lib/libortools.so
-- sudo curl -o /usr/lib64/libjniortools.so https://github.com/oliviercailloux/google-or-tools-java/raw/master/lib/libjniortools.so
+- sudo curl -o /usr/lib/libortools.so https://github.com/oliviercailloux/google-or-tools-java/raw/master/lib/libortools.so
+- sudo curl -o /usr/lib/libjniortools.so https://github.com/oliviercailloux/google-or-tools-java/raw/master/lib/libjniortools.so
 - mvn install
 
